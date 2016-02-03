@@ -1,0 +1,7 @@
+{
+  "glome" : {
+    "api-uid": "123 456 789",
+    "api-key": "234 456 678",
+    "api-uri": "https://api.glome.me/"
+  }
+}

@@ -1,0 +1,4 @@
+config/*
+!config/*.dist
+vendor/*
+composer.phar
