@@ -7,6 +7,7 @@ use ChainRevolution\Demo\GlomeClient;
 
 $configs = json_decode(file_get_contents('config/config.json'), true);
 $glomeClient = new GlomeClient($configs, true);
+
 try {
     $firstGlomeId = $glomeClient->createUser()['glomeid'];
     $secondGlomeId = $glomeClient->createUser()['glomeid'];
@@ -15,5 +16,5 @@ try {
     var_dump($glomeClient->getUserProfile($secondGlomeId));
 }
 catch (\Exception $ex) {
-    $ex->getMessage();
-}
+    var_dump($ex->getMessage());
+} 

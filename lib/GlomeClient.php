@@ -76,9 +76,9 @@ class GlomeClient
 
         return $this->post('users/' . $glomeId . '/sync/pair.json',
             [
-                'pairing[code1]' => $syncSplits[0],
-                'pairing[code2]' => $syncSplits[1],
-                'pairing[code3]' => $syncSplits[2]
+                'pairing[code_1]' => $syncSplits[0],
+                'pairing[code_2]' => $syncSplits[1],
+                'pairing[code_3]' => $syncSplits[2]
             ]);
     }
 
